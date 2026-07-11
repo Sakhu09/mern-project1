@@ -1,0 +1,252 @@
+/* ---------- Page Background ---------- */
+body{
+  background: #f5f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Top Section ---------- */
+
+.logout-box{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+
+  /* Suggestion:
+     Use gap instead of margin-left for cleaner spacing */
+}
+
+/* ---------- Search Bar ---------- */
+
+.searchbar{
+  width: 420px;
+  height: 45px;
+  padding: 0 15px;
+
+  font-size: 17px;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+
+  outline: none;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  transition: all .3s ease;
+}
+
+/* Suggestion:
+   Blue border on focus gives professional look */
+
+.searchbar:focus{
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px rgba(30,144,255,.4);
+}
+
+/* ---------- Logout Button ---------- */
+
+.logout-style{
+  background: #e53935;
+  color: white;
+
+  padding: 12px 22px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+/* Suggestion:
+   Add hover effect for better UX */
+
+.logout-style:hover{
+  background: #c62828;
+  transform: translateY(-2px);
+}
+
+/* ---------- Buttons ---------- */
+
+.createbutton-style,
+.cart-button-style{
+
+  color: white;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 12px 22px;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.createbutton-style{
+  background: #28a745;
+}
+
+.createbutton-style:hover{
+  background: #218838;
+}
+
+.cart-button-style{
+  background: #ff9800;
+}
+
+.cart-button-style:hover{
+  background: #fb8c00;
+}
+
+/* ---------- Cards ---------- */
+
+.card-container{
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  margin-top: 30px;
+}
+
+/* Suggestion:
+   gap:30px gives premium spacing */
+
+.card{
+
+  width: 290px;
+
+  min-height: 430px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  padding: 20px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+  transition: .3s;
+}
+
+/* Suggestion:
+   Card lifts when hovering */
+
+.card:hover{
+
+  transform: translateY(-10px);
+
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+
+/* ---------- Book Image ---------- */
+
+.img-style-book{
+
+  width: 180px;
+
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  transition: .3s;
+}
+
+/* Suggestion:
+   Slight zoom looks much better than shrinking */
+
+.img-style-book:hover{
+
+  transform: scale(1.08);
+}
+
+/* ---------- Price Row ---------- */
+
+.price-row-style{
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin: 18px 0;
+}
+
+/* ---------- Add to Cart Button ---------- */
+
+.add-to-cart-style{
+  
+  width: 100%;
+
+  background: #ffc107;
+
+  color: black;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 12px;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.add-to-cart-style:hover{
+
+  background: #ffb300;
+
+  transform: scale(1.03);
+}
+
+/* ---------- Cart Badge ---------- */
+
+.cart-number{
+
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 28px;
+
+  height: 28px;
+
+  background: red;
+
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  margin-left: 5px;
+}
